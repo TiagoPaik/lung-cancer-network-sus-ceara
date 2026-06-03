@@ -1,0 +1,9 @@
+pandas==2.2.3
+numpy==1.26.2
+networkx==3.4.2
+geopandas==1.0.1
+folium==0.19.4
+matplotlib==3.10.0
+osmnx
+jupyterlab
+ipykernel==6.29.5
