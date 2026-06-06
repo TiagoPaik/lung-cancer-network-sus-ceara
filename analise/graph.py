@@ -10,16 +10,6 @@ import folium
 # ------------------------------------------------------------------ #
 
 def criar_grafo(geograf, internacoes):
-    """
-    Cria um grafo bipartido direcionado a partir dos dados de internações.
-
-    Args:
-        geograf     (pd.DataFrame): Coordenadas geográficas (colunas: Nome, Latitude, Longitude)
-        internacoes (pd.DataFrame): Dados de internações (colunas: MUNICIPIO, HOSPITAL)
-
-    Returns:
-        nx.DiGraph: Grafo bipartido direcionado com pesos nas arestas
-    """
     G = nx.DiGraph()
 
     for _, row in internacoes.iterrows():
@@ -54,17 +44,7 @@ def criar_grafo(geograf, internacoes):
 
 
 def criar_grafo_por_tipo(geograf, internacoes, tipo):
-    """
-    Cria um grafo bipartido filtrado por tipo de procedimento.
 
-    Args:
-        geograf     (pd.DataFrame): Coordenadas geográficas
-        internacoes (pd.DataFrame): Dados de internações com coluna TIPO_PROC
-        tipo        (str): 'Tratamento Clinico', 'Intercorrencia' ou 'Cirurgia'
-
-    Returns:
-        nx.DiGraph: Grafo filtrado pelo tipo de procedimento
-    """
     df_filtrado = internacoes[internacoes["TIPO_PROC"] == tipo]
     return criar_grafo(geograf, df_filtrado)
 
@@ -74,13 +54,7 @@ def criar_grafo_por_tipo(geograf, internacoes, tipo):
 # ------------------------------------------------------------------ #
 
 def estatisticas_grafo(G, titulo="Grafo"):
-    """
-    Calcula e imprime estatísticas do grafo bipartido.
 
-    Args:
-        G      (nx.DiGraph): Grafo bipartido direcionado
-        titulo (str): Título para identificar o grafo no output
-    """
     municipios = [n for n, d in G.nodes(data=True) if d.get("bipartite") == 0]
     hospitais  = [n for n, d in G.nodes(data=True) if d.get("bipartite") == 1]
     graus      = [grau for _, grau in G.degree()]
@@ -99,27 +73,8 @@ def estatisticas_grafo(G, titulo="Grafo"):
     print(f"{'='*50}\n")
 
 
-# ------------------------------------------------------------------ #
-# Visualização
-# ------------------------------------------------------------------ #
-
 def plotar_grafo_folium(G, output_path="output/grafo.html", sobrecarregados=None):
-    """
-    Plota o grafo bipartido em mapa interativo com Folium.
 
-    Legenda de cores:
-        Azul   -> município
-        Vermelho -> hospital
-        Laranja  -> hospital sobrecarregado
-
-    Args:
-        G               (nx.DiGraph): Grafo bipartido direcionado
-        output_path     (str): Caminho para salvar o HTML
-        sobrecarregados (list): Lista de hospitais sobrecarregados
-
-    Returns:
-        folium.Map: Mapa interativo
-    """
     sobrecarregados = sobrecarregados or []
 
     latitudes  = [d["latitude"]  for _, d in G.nodes(data=True)]
