@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_73f55fcac627a6929c44d7ed166e314e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_73f55fcac627a6929c44d7ed166e314e" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_73f55fcac627a6929c44d7ed166e314e = L.map(
+                "map_73f55fcac627a6929c44d7ed166e314e",
+                {
+                    center: [-5.2, -39.5],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 7,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a03e5cd7c3da21725cfc6fc9ffdb9cb0 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_a03e5cd7c3da21725cfc6fc9ffdb9cb0.addTo(map_73f55fcac627a6929c44d7ed166e314e);
+        
+    
+            var circle_marker_37a0768327b64029358f18660ff45617 = L.circleMarker(
+                [-3.906286399999999, -38.3874738],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_73f55fcac627a6929c44d7ed166e314e);
+        
+    
+        var popup_72a326f45d79765c69fa5944f2588e22 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_758e2fb966fc7c5a7435221ca0fc43b1 = $(`<div id="html_758e2fb966fc7c5a7435221ca0fc43b1" style="width: 100.0%; height: 100.0%;">         <b>Município:</b> AQUIRAZ, CE<br>         <b>Total de internações:</b> 7<br>         <b>Internações para sobrecarregados:</b> 7<br>         <b>% para sobrecarregados:</b> 100.00%         </div>`)[0];
+                popup_72a326f45d79765c69fa5944f2588e22.setContent(html_758e2fb966fc7c5a7435221ca0fc43b1);
+            
+        
+
+        circle_marker_37a0768327b64029358f18660ff45617.bindPopup(popup_72a326f45d79765c69fa5944f2588e22)
+        ;
+
+        
+    
+    
+            var circle_marker_db823b9eb6d77cadd787d6ff05754ea1 = L.circleMarker(
+                [-3.8321166, -38.4801848],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_73f55fcac627a6929c44d7ed166e314e);
+        
+    
+        var popup_b37b0c398e62df4dbff689ae48da869b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_01997b7af222b295342c9cc840ce0a0a = $(`<div id="html_01997b7af222b295342c9cc840ce0a0a" style="width: 100.0%; height: 100.0%;">         <b>Hospital candidato:</b> HOSPITAL GERAL DR WALDEMAR ALCANTARA<br>         <b>CNES:</b> 2785900<br>         <b>Porte:</b> Grande<br>         <b>Distância aproximada:</b> 13.18 km         </div>`)[0];
+                popup_b37b0c398e62df4dbff689ae48da869b.setContent(html_01997b7af222b295342c9cc840ce0a0a);
+            
+        
+
+        circle_marker_db823b9eb6d77cadd787d6ff05754ea1.bindPopup(popup_b37b0c398e62df4dbff689ae48da869b)
+        ;
+
+        
+    
+    
+            var poly_line_da96fd093500da7d6fe2cf2c4c351d98 = L.polyline(
+                [[-3.906286399999999, -38.3874738], [-3.8321166, -38.4801848]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_73f55fcac627a6929c44d7ed166e314e);
+        
+    
+            var circle_marker_c6281b09cdd458f6669a6772f9b71b2b = L.circleMarker(
+                [-4.2883444, -38.6412559],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_73f55fcac627a6929c44d7ed166e314e);
+        
+    
+        var popup_f447a530a691dc98f6bcc194649afe86 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8e4e5c3bab72dde9397a529d96894536 = $(`<div id="html_8e4e5c3bab72dde9397a529d96894536" style="width: 100.0%; height: 100.0%;">         <b>Município:</b> BARREIRA, CE<br>         <b>Total de internações:</b> 8<br>         <b>Internações para sobrecarregados:</b> 8<br>         <b>% para sobrecarregados:</b> 100.00%         </div>`)[0];
+                popup_f447a530a691dc98f6bcc194649afe86.setContent(html_8e4e5c3bab72dde9397a529d96894536);
+            
+        
+
+        circle_marker_c6281b09cdd458f6669a6772f9b71b2b.bindPopup(popup_f447a530a691dc98f6bcc194649afe86)
+        ;
+
+        
+    
+    
+            var circle_marker_47e526516189cb18041aeeb269827156 = L.circleMarker(
+                [-3.878280299999999, -38.6235309],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_73f55fcac627a6929c44d7ed166e314e);
+        
+    
+        var popup_4aad9b49a93ff86641b094f633d771b4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_41f75f596e537f465da95d1e2ffb46f1 = $(`<div id="html_41f75f596e537f465da95d1e2ffb46f1" style="width: 100.0%; height: 100.0%;">         <b>Hospital candidato:</b> HOSPITAL MUNICIPAL DR JOAO ELISIO DE HOLANDA<br>         <b>CNES:</b> 2806215<br>         <b>Porte:</b> Grande<br>         <b>Distância aproximada:</b> 45.64 km         </div>`)[0];
+                popup_4aad9b49a93ff86641b094f633d771b4.setContent(html_41f75f596e537f465da95d1e2ffb46f1);
+            
+        
+
+        circle_marker_47e526516189cb18041aeeb269827156.bindPopup(popup_4aad9b49a93ff86641b094f633d771b4)
+        ;
+
+        
+    
+    
+            var poly_line_91e4031185d5e649b73626a3ae201bbf = L.polyline(
+                [[-4.2883444, -38.6412559], [-3.878280299999999, -38.6235309]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_73f55fcac627a6929c44d7ed166e314e);
+        
+    
+            var circle_marker_dbc60bff5fc11166889cbf4cc9e2c2a0 = L.circleMarker(
+                [-4.1311575, -38.2470491],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_73f55fcac627a6929c44d7ed166e314e);
+        
+    
+        var popup_ea04d25991d544c95bd0eda655aa19d4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_881f1ca355cd76f42d18fb13119bdc45 = $(`<div id="html_881f1ca355cd76f42d18fb13119bdc45" style="width: 100.0%; height: 100.0%;">         <b>Município:</b> CASCAVEL, CE<br>         <b>Total de internações:</b> 13<br>         <b>Internações para sobrecarregados:</b> 12<br>         <b>% para sobrecarregados:</b> 92.31%         </div>`)[0];
+                popup_ea04d25991d544c95bd0eda655aa19d4.setContent(html_881f1ca355cd76f42d18fb13119bdc45);
+            
+        
+
+        circle_marker_dbc60bff5fc11166889cbf4cc9e2c2a0.bindPopup(popup_ea04d25991d544c95bd0eda655aa19d4)
+        ;
+
+        
+    
+    
+            var circle_marker_e389d3d20393e99f4293e9ed7e496f6a = L.circleMarker(
+                [-3.8321166, -38.4801848],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_73f55fcac627a6929c44d7ed166e314e);
+        
+    
+        var popup_5efeca8a4bb3dacb9f3d80b16874abca = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a545d79d1daee0de8856da49995b6992 = $(`<div id="html_a545d79d1daee0de8856da49995b6992" style="width: 100.0%; height: 100.0%;">         <b>Hospital candidato:</b> HOSPITAL GERAL DR WALDEMAR ALCANTARA<br>         <b>CNES:</b> 2785900<br>         <b>Porte:</b> Grande<br>         <b>Distância aproximada:</b> 42.12 km         </div>`)[0];
+                popup_5efeca8a4bb3dacb9f3d80b16874abca.setContent(html_a545d79d1daee0de8856da49995b6992);
+            
+        
+
+        circle_marker_e389d3d20393e99f4293e9ed7e496f6a.bindPopup(popup_5efeca8a4bb3dacb9f3d80b16874abca)
+        ;
+
+        
+    
+    
+            var poly_line_4004cfe54667a7054ce022dc298792d1 = L.polyline(
+                [[-4.1311575, -38.2470491], [-3.8321166, -38.4801848]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_73f55fcac627a6929c44d7ed166e314e);
+        
+    
+            var circle_marker_08f57e6bf38b2cd3c88f1c314864a420 = L.circleMarker(
+                [-3.7281443, -38.6619214],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_73f55fcac627a6929c44d7ed166e314e);
+        
+    
+        var popup_752e4581c94ec1966fed9944b2124dcf = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0c71bb7d499f558b841d49d7828d02dd = $(`<div id="html_0c71bb7d499f558b841d49d7828d02dd" style="width: 100.0%; height: 100.0%;">         <b>Município:</b> CAUCAIA, CE<br>         <b>Total de internações:</b> 44<br>         <b>Internações para sobrecarregados:</b> 36<br>         <b>% para sobrecarregados:</b> 81.82%         </div>`)[0];
+                popup_752e4581c94ec1966fed9944b2124dcf.setContent(html_0c71bb7d499f558b841d49d7828d02dd);
+            
+        
+
+        circle_marker_08f57e6bf38b2cd3c88f1c314864a420.bindPopup(popup_752e4581c94ec1966fed9944b2124dcf)
+        ;
+
+        
+    
+    
+            var circle_marker_5fcf026dfa9b22741eca10d3e59f176f = L.circleMarker(
+                [-3.7126897010388378, -38.5729448506617],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_73f55fcac627a6929c44d7ed166e314e);
+        
+    
+        var popup_6c018ea2ea3a9161cb1a6f3aae6722a1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_daa9a6bf3687250f2cb6876d022f33a9 = $(`<div id="html_daa9a6bf3687250f2cb6876d022f33a9" style="width: 100.0%; height: 100.0%;">         <b>Hospital candidato:</b> HOSPITAL DISTRITAL DR FERNANDES TAVORA<br>         <b>CNES:</b> 2528843<br>         <b>Porte:</b> Grande<br>         <b>Distância aproximada:</b> 10.02 km         </div>`)[0];
+                popup_6c018ea2ea3a9161cb1a6f3aae6722a1.setContent(html_daa9a6bf3687250f2cb6876d022f33a9);
+            
+        
+
+        circle_marker_5fcf026dfa9b22741eca10d3e59f176f.bindPopup(popup_6c018ea2ea3a9161cb1a6f3aae6722a1)
+        ;
+
+        
+    
+    
+            var poly_line_dc7802ffc4782dddb44f29f39e8b68ec = L.polyline(
+                [[-3.7281443, -38.6619214], [-3.7126897010388378, -38.5729448506617]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_73f55fcac627a6929c44d7ed166e314e);
+        
+    
+            var circle_marker_8221db113ca5fcd5866abe46014a7138 = L.circleMarker(
+                [-3.8890009, -38.4546539],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_73f55fcac627a6929c44d7ed166e314e);
+        
+    
+        var popup_6e8a495d4e6c937c9ae723d5cee36165 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ff1609e6e05b6fee0f726d7071be3d0e = $(`<div id="html_ff1609e6e05b6fee0f726d7071be3d0e" style="width: 100.0%; height: 100.0%;">         <b>Município:</b> EUSEBIO, CE<br>         <b>Total de internações:</b> 21<br>         <b>Internações para sobrecarregados:</b> 19<br>         <b>% para sobrecarregados:</b> 90.48%         </div>`)[0];
+                popup_6e8a495d4e6c937c9ae723d5cee36165.setContent(html_ff1609e6e05b6fee0f726d7071be3d0e);
+            
+        
+
+        circle_marker_8221db113ca5fcd5866abe46014a7138.bindPopup(popup_6e8a495d4e6c937c9ae723d5cee36165)
+        ;
+
+        
+    
+    
+            var circle_marker_368abdbbc402f8681916ddd1c064b68f = L.circleMarker(
+                [-3.8321166, -38.4801848],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_73f55fcac627a6929c44d7ed166e314e);
+        
+    
+        var popup_02bb66f44547280dab1055dbeae80eee = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ec87a07b89a6883c2dd8111700013e95 = $(`<div id="html_ec87a07b89a6883c2dd8111700013e95" style="width: 100.0%; height: 100.0%;">         <b>Hospital candidato:</b> HOSPITAL GERAL DR WALDEMAR ALCANTARA<br>         <b>CNES:</b> 2785900<br>         <b>Porte:</b> Grande<br>         <b>Distância aproximada:</b> 6.93 km         </div>`)[0];
+                popup_02bb66f44547280dab1055dbeae80eee.setContent(html_ec87a07b89a6883c2dd8111700013e95);
+            
+        
+
+        circle_marker_368abdbbc402f8681916ddd1c064b68f.bindPopup(popup_02bb66f44547280dab1055dbeae80eee)
+        ;
+
+        
+    
+    
+            var poly_line_f99a5ca9ec4b8f27ffc74b960ef7b18a = L.polyline(
+                [[-3.8890009, -38.4546539], [-3.8321166, -38.4801848]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_73f55fcac627a6929c44d7ed166e314e);
+        
+    
+            var circle_marker_9584ce170570e74444ee48481dc60747 = L.circleMarker(
+                [-3.7327203, -38.5270134],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_73f55fcac627a6929c44d7ed166e314e);
+        
+    
+        var popup_c38e38de57238e6ab02242764219f4f7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6c7e26714f83673459b3bf77a85abcda = $(`<div id="html_6c7e26714f83673459b3bf77a85abcda" style="width: 100.0%; height: 100.0%;">         <b>Município:</b> FORTALEZA, CE<br>         <b>Total de internações:</b> 511<br>         <b>Internações para sobrecarregados:</b> 412<br>         <b>% para sobrecarregados:</b> 80.63%         </div>`)[0];
+                popup_c38e38de57238e6ab02242764219f4f7.setContent(html_6c7e26714f83673459b3bf77a85abcda);
+            
+        
+
+        circle_marker_9584ce170570e74444ee48481dc60747.bindPopup(popup_c38e38de57238e6ab02242764219f4f7)
+        ;
+
+        
+    
+    
+            var circle_marker_709f1e3f942e2501bc409a018277ee25 = L.circleMarker(
+                [-3.7342646700838658, -38.531428645384175],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_73f55fcac627a6929c44d7ed166e314e);
+        
+    
+        var popup_13da1d2080fc53b2b22315c43a68cbc2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_aefad899ec3618dbcc1703ba4a6a208b = $(`<div id="html_aefad899ec3618dbcc1703ba4a6a208b" style="width: 100.0%; height: 100.0%;">         <b>Hospital candidato:</b> IJF INSTITUTO DR JOSE FROTA CENTRAL<br>         <b>CNES:</b> 2529149<br>         <b>Porte:</b> Especial<br>         <b>Distância aproximada:</b> 0.52 km         </div>`)[0];
+                popup_13da1d2080fc53b2b22315c43a68cbc2.setContent(html_aefad899ec3618dbcc1703ba4a6a208b);
+            
+        
+
+        circle_marker_709f1e3f942e2501bc409a018277ee25.bindPopup(popup_13da1d2080fc53b2b22315c43a68cbc2)
+        ;
+
+        
+    
+    
+            var poly_line_019f597a1e3a88b0bcf65f338a0da881 = L.polyline(
+                [[-3.7327203, -38.5270134], [-3.7342646700838658, -38.531428645384175]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_73f55fcac627a6929c44d7ed166e314e);
+        
+    
+            var circle_marker_68aef172b451b72bf66cfdd191157bee = L.circleMarker(
+                [-3.9717463, -38.52959999999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_73f55fcac627a6929c44d7ed166e314e);
+        
+    
+        var popup_dc51507849784a3aee8b611cab8d9336 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_129552d00dc882eea437b5d24633685c = $(`<div id="html_129552d00dc882eea437b5d24633685c" style="width: 100.0%; height: 100.0%;">         <b>Município:</b> ITAITINGA, CE<br>         <b>Total de internações:</b> 13<br>         <b>Internações para sobrecarregados:</b> 11<br>         <b>% para sobrecarregados:</b> 84.62%         </div>`)[0];
+                popup_dc51507849784a3aee8b611cab8d9336.setContent(html_129552d00dc882eea437b5d24633685c);
+            
+        
+
+        circle_marker_68aef172b451b72bf66cfdd191157bee.bindPopup(popup_dc51507849784a3aee8b611cab8d9336)
+        ;
+
+        
+    
+    
+            var circle_marker_d8e342f70925f17dd8e0ad63651adc52 = L.circleMarker(
+                [-3.878280299999999, -38.6235309],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_73f55fcac627a6929c44d7ed166e314e);
+        
+    
+        var popup_55db92ca9d0c67df3fd22e53ceeb0686 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b3c4487a5e6d7f3042c5aacf9d853fc5 = $(`<div id="html_b3c4487a5e6d7f3042c5aacf9d853fc5" style="width: 100.0%; height: 100.0%;">         <b>Hospital candidato:</b> HOSPITAL MUNICIPAL DR JOAO ELISIO DE HOLANDA<br>         <b>CNES:</b> 2806215<br>         <b>Porte:</b> Grande<br>         <b>Distância aproximada:</b> 14.72 km         </div>`)[0];
+                popup_55db92ca9d0c67df3fd22e53ceeb0686.setContent(html_b3c4487a5e6d7f3042c5aacf9d853fc5);
+            
+        
+
+        circle_marker_d8e342f70925f17dd8e0ad63651adc52.bindPopup(popup_55db92ca9d0c67df3fd22e53ceeb0686)
+        ;
+
+        
+    
+    
+            var poly_line_83319bc55d21d283760150f6ae9c4acc = L.polyline(
+                [[-3.9717463, -38.52959999999999], [-3.878280299999999, -38.6235309]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_73f55fcac627a6929c44d7ed166e314e);
+        
+    
+            var circle_marker_4ce1d16e1600a28a3168133a5914955c = L.circleMarker(
+                [-3.6844551, -39.58637239999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_73f55fcac627a6929c44d7ed166e314e);
+        
+    
+        var popup_91dbb004df55f886162fe542e43d0ec7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d73d06637d9f0d73a32358307253aba2 = $(`<div id="html_d73d06637d9f0d73a32358307253aba2" style="width: 100.0%; height: 100.0%;">         <b>Município:</b> ITAPAGE, CE<br>         <b>Total de internações:</b> 9<br>         <b>Internações para sobrecarregados:</b> 8<br>         <b>% para sobrecarregados:</b> 88.89%         </div>`)[0];
+                popup_91dbb004df55f886162fe542e43d0ec7.setContent(html_d73d06637d9f0d73a32358307253aba2);
+            
+        
+
+        circle_marker_4ce1d16e1600a28a3168133a5914955c.bindPopup(popup_91dbb004df55f886162fe542e43d0ec7)
+        ;
+
+        
+    
+    
+            var circle_marker_f9e9179e199e1a0ac256ab3f83204140 = L.circleMarker(
+                [-3.6935491, -40.3589038],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_73f55fcac627a6929c44d7ed166e314e);
+        
+    
+        var popup_5647f91bddb8e9c27371a69aedc6a432 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_20a3b2be4fbe2cbb4d66646f4d878ce5 = $(`<div id="html_20a3b2be4fbe2cbb4d66646f4d878ce5" style="width: 100.0%; height: 100.0%;">         <b>Hospital candidato:</b> SANTA CASA DE MISERICORDIA DE SOBRAL<br>         <b>CNES:</b> 3021114<br>         <b>Porte:</b> Grande<br>         <b>Distância aproximada:</b> 85.73 km         </div>`)[0];
+                popup_5647f91bddb8e9c27371a69aedc6a432.setContent(html_20a3b2be4fbe2cbb4d66646f4d878ce5);
+            
+        
+
+        circle_marker_f9e9179e199e1a0ac256ab3f83204140.bindPopup(popup_5647f91bddb8e9c27371a69aedc6a432)
+        ;
+
+        
+    
+    
+            var poly_line_2ea3939bafd11b55d3aa0528a048854e = L.polyline(
+                [[-3.6844551, -39.58637239999999], [-3.6935491, -40.3589038]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_73f55fcac627a6929c44d7ed166e314e);
+        
+    
+            var circle_marker_1b2270a987e883252e07286722489f3d = L.circleMarker(
+                [-3.4947131, -39.5803861],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_73f55fcac627a6929c44d7ed166e314e);
+        
+    
+        var popup_0af0790dd91325b0844d6d2e9f8124ae = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_99f49ac0b6378dce2df218efdcd7c2be = $(`<div id="html_99f49ac0b6378dce2df218efdcd7c2be" style="width: 100.0%; height: 100.0%;">         <b>Município:</b> ITAPIPOCA, CE<br>         <b>Total de internações:</b> 18<br>         <b>Internações para sobrecarregados:</b> 13<br>         <b>% para sobrecarregados:</b> 72.22%         </div>`)[0];
+                popup_0af0790dd91325b0844d6d2e9f8124ae.setContent(html_99f49ac0b6378dce2df218efdcd7c2be);
+            
+        
+
+        circle_marker_1b2270a987e883252e07286722489f3d.bindPopup(popup_0af0790dd91325b0844d6d2e9f8124ae)
+        ;
+
+        
+    
+    
+            var circle_marker_78c45a4e19bb0b31c7ec571668dc07d6 = L.circleMarker(
+                [-3.6935491, -40.3589038],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_73f55fcac627a6929c44d7ed166e314e);
+        
+    
+        var popup_320c7ebc3133a03d5e533a7db077dab3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e4227653bf96042e3bfd8463ce08197c = $(`<div id="html_e4227653bf96042e3bfd8463ce08197c" style="width: 100.0%; height: 100.0%;">         <b>Hospital candidato:</b> SANTA CASA DE MISERICORDIA DE SOBRAL<br>         <b>CNES:</b> 3021114<br>         <b>Porte:</b> Grande<br>         <b>Distância aproximada:</b> 89.18 km         </div>`)[0];
+                popup_320c7ebc3133a03d5e533a7db077dab3.setContent(html_e4227653bf96042e3bfd8463ce08197c);
+            
+        
+
+        circle_marker_78c45a4e19bb0b31c7ec571668dc07d6.bindPopup(popup_320c7ebc3133a03d5e533a7db077dab3)
+        ;
+
+        
+    
+    
+            var poly_line_6d06430a621c34c5a19a0fc00f43d657 = L.polyline(
+                [[-3.4947131, -39.5803861], [-3.6935491, -40.3589038]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_73f55fcac627a6929c44d7ed166e314e);
+        
+    
+            var circle_marker_ec9478d4a1195e1da437ab1e16855753 = L.circleMarker(
+                [-3.8682838, -38.6264568],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_73f55fcac627a6929c44d7ed166e314e);
+        
+    
+        var popup_a1acdfb7cc9458c5782d94a803b74974 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4337d434d4402fd264c5166cc7a7c9cf = $(`<div id="html_4337d434d4402fd264c5166cc7a7c9cf" style="width: 100.0%; height: 100.0%;">         <b>Município:</b> MARACANAU, CE<br>         <b>Total de internações:</b> 46<br>         <b>Internações para sobrecarregados:</b> 29<br>         <b>% para sobrecarregados:</b> 63.04%         </div>`)[0];
+                popup_a1acdfb7cc9458c5782d94a803b74974.setContent(html_4337d434d4402fd264c5166cc7a7c9cf);
+            
+        
+
+        circle_marker_ec9478d4a1195e1da437ab1e16855753.bindPopup(popup_a1acdfb7cc9458c5782d94a803b74974)
+        ;
+
+        
+    
+    
+            var circle_marker_9ad31aa305e46f93dda2a846c0dd87e7 = L.circleMarker(
+                [-3.878280299999999, -38.6235309],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_73f55fcac627a6929c44d7ed166e314e);
+        
+    
+        var popup_bd8650b5b4c8d7e90f507f2eb986268e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4ba57f0cb7df5c2bab9bc9be8131fa3e = $(`<div id="html_4ba57f0cb7df5c2bab9bc9be8131fa3e" style="width: 100.0%; height: 100.0%;">         <b>Hospital candidato:</b> HOSPITAL MUNICIPAL DR JOAO ELISIO DE HOLANDA<br>         <b>CNES:</b> 2806215<br>         <b>Porte:</b> Grande<br>         <b>Distância aproximada:</b> 1.16 km         </div>`)[0];
+                popup_bd8650b5b4c8d7e90f507f2eb986268e.setContent(html_4ba57f0cb7df5c2bab9bc9be8131fa3e);
+            
+        
+
+        circle_marker_9ad31aa305e46f93dda2a846c0dd87e7.bindPopup(popup_bd8650b5b4c8d7e90f507f2eb986268e)
+        ;
+
+        
+    
+    
+            var poly_line_cc0f3e641010f3024a0fc2608d6eba6d = L.polyline(
+                [[-3.8682838, -38.6264568], [-3.878280299999999, -38.6235309]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_73f55fcac627a6929c44d7ed166e314e);
+        
+    
+            var circle_marker_105ec6f7a31c561a212be0dfe6365522 = L.circleMarker(
+                [-3.8917126, -38.6841701],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_73f55fcac627a6929c44d7ed166e314e);
+        
+    
+        var popup_9a7e90c834a580a2c02bbb7383a3dc62 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c4a51ea58d2d99abe0c15d0eb37b2a23 = $(`<div id="html_c4a51ea58d2d99abe0c15d0eb37b2a23" style="width: 100.0%; height: 100.0%;">         <b>Município:</b> MARANGUAPE, CE<br>         <b>Total de internações:</b> 17<br>         <b>Internações para sobrecarregados:</b> 16<br>         <b>% para sobrecarregados:</b> 94.12%         </div>`)[0];
+                popup_9a7e90c834a580a2c02bbb7383a3dc62.setContent(html_c4a51ea58d2d99abe0c15d0eb37b2a23);
+            
+        
+
+        circle_marker_105ec6f7a31c561a212be0dfe6365522.bindPopup(popup_9a7e90c834a580a2c02bbb7383a3dc62)
+        ;
+
+        
+    
+    
+            var circle_marker_06082adf270eef8434aa647fcf9dd085 = L.circleMarker(
+                [-3.878280299999999, -38.6235309],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_73f55fcac627a6929c44d7ed166e314e);
+        
+    
+        var popup_73433c781713dbf6b6581baed0bb3753 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_09e6f9d906b213e62236799e4a1ff6f4 = $(`<div id="html_09e6f9d906b213e62236799e4a1ff6f4" style="width: 100.0%; height: 100.0%;">         <b>Hospital candidato:</b> HOSPITAL MUNICIPAL DR JOAO ELISIO DE HOLANDA<br>         <b>CNES:</b> 2806215<br>         <b>Porte:</b> Grande<br>         <b>Distância aproximada:</b> 6.89 km         </div>`)[0];
+                popup_73433c781713dbf6b6581baed0bb3753.setContent(html_09e6f9d906b213e62236799e4a1ff6f4);
+            
+        
+
+        circle_marker_06082adf270eef8434aa647fcf9dd085.bindPopup(popup_73433c781713dbf6b6581baed0bb3753)
+        ;
+
+        
+    
+    
+            var poly_line_a84390babf10dbbf678e95c0beae5ed7 = L.polyline(
+                [[-3.8917126, -38.6841701], [-3.878280299999999, -38.6235309]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_73f55fcac627a6929c44d7ed166e314e);
+        
+    
+            var circle_marker_007c4d7285df1f931cfb4f81a4be33e8 = L.circleMarker(
+                [-4.1733126, -38.4637749],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_73f55fcac627a6929c44d7ed166e314e);
+        
+    
+        var popup_4fc996af789d73c6b8cd3767deca03c1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_33660cd73f56d1d6600ab2b3febdf776 = $(`<div id="html_33660cd73f56d1d6600ab2b3febdf776" style="width: 100.0%; height: 100.0%;">         <b>Município:</b> PACAJUS, CE<br>         <b>Total de internações:</b> 13<br>         <b>Internações para sobrecarregados:</b> 7<br>         <b>% para sobrecarregados:</b> 53.85%         </div>`)[0];
+                popup_4fc996af789d73c6b8cd3767deca03c1.setContent(html_33660cd73f56d1d6600ab2b3febdf776);
+            
+        
+
+        circle_marker_007c4d7285df1f931cfb4f81a4be33e8.bindPopup(popup_4fc996af789d73c6b8cd3767deca03c1)
+        ;
+
+        
+    
+    
+            var circle_marker_854b7c016082e683c20679c7956a7e8a = L.circleMarker(
+                [-3.878280299999999, -38.6235309],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_73f55fcac627a6929c44d7ed166e314e);
+        
+    
+        var popup_282af5e66ade006d90592637d921af2e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3a0d3adb0bdacc8a2912d6107665afd6 = $(`<div id="html_3a0d3adb0bdacc8a2912d6107665afd6" style="width: 100.0%; height: 100.0%;">         <b>Hospital candidato:</b> HOSPITAL MUNICIPAL DR JOAO ELISIO DE HOLANDA<br>         <b>CNES:</b> 2806215<br>         <b>Porte:</b> Grande<br>         <b>Distância aproximada:</b> 37.29 km         </div>`)[0];
+                popup_282af5e66ade006d90592637d921af2e.setContent(html_3a0d3adb0bdacc8a2912d6107665afd6);
+            
+        
+
+        circle_marker_854b7c016082e683c20679c7956a7e8a.bindPopup(popup_282af5e66ade006d90592637d921af2e)
+        ;
+
+        
+    
+    
+            var poly_line_fb0d6e6cb13d5a362f2066260656d431 = L.polyline(
+                [[-4.1733126, -38.4637749], [-3.878280299999999, -38.6235309]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_73f55fcac627a6929c44d7ed166e314e);
+        
+    
+            var circle_marker_f23c1d32c1547abfbf6854e9291d36ba = L.circleMarker(
+                [-5.4542087, -39.716378],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_73f55fcac627a6929c44d7ed166e314e);
+        
+    
+        var popup_22e3d103dbecefba94c77812b0a55643 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b14ac17732054be504f9120fa5d4d6a9 = $(`<div id="html_b14ac17732054be504f9120fa5d4d6a9" style="width: 100.0%; height: 100.0%;">         <b>Município:</b> PEDRA BRANCA, CE<br>         <b>Total de internações:</b> 9<br>         <b>Internações para sobrecarregados:</b> 7<br>         <b>% para sobrecarregados:</b> 77.78%         </div>`)[0];
+                popup_22e3d103dbecefba94c77812b0a55643.setContent(html_b14ac17732054be504f9120fa5d4d6a9);
+            
+        
+
+        circle_marker_f23c1d32c1547abfbf6854e9291d36ba.bindPopup(popup_22e3d103dbecefba94c77812b0a55643)
+        ;
+
+        
+    
+    
+            var circle_marker_e492ae7a449505aa9d38a4ea503e31c5 = L.circleMarker(
+                [-5.1832747, -39.2616355],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_73f55fcac627a6929c44d7ed166e314e);
+        
+    
+        var popup_d484bd8f1a2f4edfb3a9b34a54cdca26 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f004de630fa8676625b23fe0f0771bfb = $(`<div id="html_f004de630fa8676625b23fe0f0771bfb" style="width: 100.0%; height: 100.0%;">         <b>Hospital candidato:</b> HOSPITAL REGIONAL DO SERTAO CENTRAL<br>         <b>CNES:</b> 7061021<br>         <b>Porte:</b> Grande<br>         <b>Distância aproximada:</b> 58.67 km         </div>`)[0];
+                popup_d484bd8f1a2f4edfb3a9b34a54cdca26.setContent(html_f004de630fa8676625b23fe0f0771bfb);
+            
+        
+
+        circle_marker_e492ae7a449505aa9d38a4ea503e31c5.bindPopup(popup_d484bd8f1a2f4edfb3a9b34a54cdca26)
+        ;
+
+        
+    
+    
+            var poly_line_bfc123d4e5e1d521c777968ad4adaa61 = L.polyline(
+                [[-5.4542087, -39.716378], [-5.1832747, -39.2616355]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_73f55fcac627a6929c44d7ed166e314e);
+        
+    
+            var circle_marker_57b077c37bdb9301e5403d1a46fbdc6e = L.circleMarker(
+                [-4.9684385, -39.0161259],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_73f55fcac627a6929c44d7ed166e314e);
+        
+    
+        var popup_d63f112ba30c0caf2f35244a60635acd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_da7c359f6033b7d7f0eaae968eda1417 = $(`<div id="html_da7c359f6033b7d7f0eaae968eda1417" style="width: 100.0%; height: 100.0%;">         <b>Município:</b> QUIXADA, CE<br>         <b>Total de internações:</b> 10<br>         <b>Internações para sobrecarregados:</b> 7<br>         <b>% para sobrecarregados:</b> 70.00%         </div>`)[0];
+                popup_d63f112ba30c0caf2f35244a60635acd.setContent(html_da7c359f6033b7d7f0eaae968eda1417);
+            
+        
+
+        circle_marker_57b077c37bdb9301e5403d1a46fbdc6e.bindPopup(popup_d63f112ba30c0caf2f35244a60635acd)
+        ;
+
+        
+    
+    
+            var circle_marker_224e3edf45932f665d72aa65496ceefe = L.circleMarker(
+                [-5.1832747, -39.2616355],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_73f55fcac627a6929c44d7ed166e314e);
+        
+    
+        var popup_d766071e68b33d1fd17de5443b9bbf5c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e459cb4a14229274e7ab4dbe3ff058db = $(`<div id="html_e459cb4a14229274e7ab4dbe3ff058db" style="width: 100.0%; height: 100.0%;">         <b>Hospital candidato:</b> HOSPITAL REGIONAL DO SERTAO CENTRAL<br>         <b>CNES:</b> 7061021<br>         <b>Porte:</b> Grande<br>         <b>Distância aproximada:</b> 36.20 km         </div>`)[0];
+                popup_d766071e68b33d1fd17de5443b9bbf5c.setContent(html_e459cb4a14229274e7ab4dbe3ff058db);
+            
+        
+
+        circle_marker_224e3edf45932f665d72aa65496ceefe.bindPopup(popup_d766071e68b33d1fd17de5443b9bbf5c)
+        ;
+
+        
+    
+    
+            var poly_line_9cd37143099fb636ba0dcc9117b01d41 = L.polyline(
+                [[-4.9684385, -39.0161259], [-5.1832747, -39.2616355]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_73f55fcac627a6929c44d7ed166e314e);
+        
+    
+            var circle_marker_3ed200ff81509d89dc2e782ff8952f30 = L.circleMarker(
+                [-5.1982962, -39.2955312],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_73f55fcac627a6929c44d7ed166e314e);
+        
+    
+        var popup_0299e5de6277031cb7e7f065941571e7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fc7d6569494bd20f499c85d3c02b1502 = $(`<div id="html_fc7d6569494bd20f499c85d3c02b1502" style="width: 100.0%; height: 100.0%;">         <b>Município:</b> QUIXERAMOBIM, CE<br>         <b>Total de internações:</b> 16<br>         <b>Internações para sobrecarregados:</b> 6<br>         <b>% para sobrecarregados:</b> 37.50%         </div>`)[0];
+                popup_0299e5de6277031cb7e7f065941571e7.setContent(html_fc7d6569494bd20f499c85d3c02b1502);
+            
+        
+
+        circle_marker_3ed200ff81509d89dc2e782ff8952f30.bindPopup(popup_0299e5de6277031cb7e7f065941571e7)
+        ;
+
+        
+    
+    
+            var circle_marker_98fc8098a785b495bfa40bddbbdf35da = L.circleMarker(
+                [-5.1832747, -39.2616355],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_73f55fcac627a6929c44d7ed166e314e);
+        
+    
+        var popup_a9cc9483ac5d69481c29909d8368eb53 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_98cc0fb0d41511ec023ec029a36dd6f5 = $(`<div id="html_98cc0fb0d41511ec023ec029a36dd6f5" style="width: 100.0%; height: 100.0%;">         <b>Hospital candidato:</b> HOSPITAL REGIONAL DO SERTAO CENTRAL<br>         <b>CNES:</b> 7061021<br>         <b>Porte:</b> Grande<br>         <b>Distância aproximada:</b> 4.11 km         </div>`)[0];
+                popup_a9cc9483ac5d69481c29909d8368eb53.setContent(html_98cc0fb0d41511ec023ec029a36dd6f5);
+            
+        
+
+        circle_marker_98fc8098a785b495bfa40bddbbdf35da.bindPopup(popup_a9cc9483ac5d69481c29909d8368eb53)
+        ;
+
+        
+    
+    
+            var poly_line_221be2203bd5ac2f3941a2f1097880b9 = L.polyline(
+                [[-5.1982962, -39.2955312], [-5.1832747, -39.2616355]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_73f55fcac627a6929c44d7ed166e314e);
+        
+    
+            var circle_marker_2ae46992a7e1b5827c8beb10f5198189 = L.circleMarker(
+                [-4.9414188, -37.976262],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_73f55fcac627a6929c44d7ed166e314e);
+        
+    
+        var popup_f3d11279d225253164effd84aa717f16 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_52d467b0ae46ecdda372c9b16685574f = $(`<div id="html_52d467b0ae46ecdda372c9b16685574f" style="width: 100.0%; height: 100.0%;">         <b>Município:</b> RUSSAS, CE<br>         <b>Total de internações:</b> 29<br>         <b>Internações para sobrecarregados:</b> 27<br>         <b>% para sobrecarregados:</b> 93.10%         </div>`)[0];
+                popup_f3d11279d225253164effd84aa717f16.setContent(html_52d467b0ae46ecdda372c9b16685574f);
+            
+        
+
+        circle_marker_2ae46992a7e1b5827c8beb10f5198189.bindPopup(popup_f3d11279d225253164effd84aa717f16)
+        ;
+
+        
+    
+    
+            var circle_marker_b4d416df72a836a9528862c83bd14fbc = L.circleMarker(
+                [-3.8321166, -38.4801848],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_73f55fcac627a6929c44d7ed166e314e);
+        
+    
+        var popup_cc0a73e1d525a81e7e89404bc600afe3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_daf1b22c9d8c7db0bf709ed30212b84c = $(`<div id="html_daf1b22c9d8c7db0bf709ed30212b84c" style="width: 100.0%; height: 100.0%;">         <b>Hospital candidato:</b> HOSPITAL GERAL DR WALDEMAR ALCANTARA<br>         <b>CNES:</b> 2785900<br>         <b>Porte:</b> Grande<br>         <b>Distância aproximada:</b> 135.41 km         </div>`)[0];
+                popup_cc0a73e1d525a81e7e89404bc600afe3.setContent(html_daf1b22c9d8c7db0bf709ed30212b84c);
+            
+        
+
+        circle_marker_b4d416df72a836a9528862c83bd14fbc.bindPopup(popup_cc0a73e1d525a81e7e89404bc600afe3)
+        ;
+
+        
+    
+    
+            var poly_line_25cc63fea93f6b765779621f774e5ae8 = L.polyline(
+                [[-4.9414188, -37.976262], [-3.8321166, -38.4801848]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_73f55fcac627a6929c44d7ed166e314e);
+        
+    
+            var circle_marker_dcc758c95fcf68ad7bb61043ffd5e480 = L.circleMarker(
+                [-3.6844057, -40.35617939999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_73f55fcac627a6929c44d7ed166e314e);
+        
+    
+        var popup_a1b5490bf32bf327c1740bc8227b5333 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8abaef908ba7d385ab56a9af9d5490b9 = $(`<div id="html_8abaef908ba7d385ab56a9af9d5490b9" style="width: 100.0%; height: 100.0%;">         <b>Município:</b> SOBRAL, CE<br>         <b>Total de internações:</b> 20<br>         <b>Internações para sobrecarregados:</b> 7<br>         <b>% para sobrecarregados:</b> 35.00%         </div>`)[0];
+                popup_a1b5490bf32bf327c1740bc8227b5333.setContent(html_8abaef908ba7d385ab56a9af9d5490b9);
+            
+        
+
+        circle_marker_dcc758c95fcf68ad7bb61043ffd5e480.bindPopup(popup_a1b5490bf32bf327c1740bc8227b5333)
+        ;
+
+        
+    
+    
+            var circle_marker_6b22b793d8259f673542d483f5565c0b = L.circleMarker(
+                [-3.6935491, -40.3589038],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_73f55fcac627a6929c44d7ed166e314e);
+        
+    
+        var popup_8603c20c5777e3b77548f1853ed3fbc8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8137093b659accca71031173f536484e = $(`<div id="html_8137093b659accca71031173f536484e" style="width: 100.0%; height: 100.0%;">         <b>Hospital candidato:</b> SANTA CASA DE MISERICORDIA DE SOBRAL<br>         <b>CNES:</b> 3021114<br>         <b>Porte:</b> Grande<br>         <b>Distância aproximada:</b> 1.06 km         </div>`)[0];
+                popup_8603c20c5777e3b77548f1853ed3fbc8.setContent(html_8137093b659accca71031173f536484e);
+            
+        
+
+        circle_marker_6b22b793d8259f673542d483f5565c0b.bindPopup(popup_8603c20c5777e3b77548f1853ed3fbc8)
+        ;
+
+        
+    
+    
+            var poly_line_1dd8e201a0525e5688f62f43d2bb1a9f = L.polyline(
+                [[-3.6844057, -40.35617939999999], [-3.6935491, -40.3589038]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_73f55fcac627a6929c44d7ed166e314e);
+        
+    
+            var circle_marker_a4c2c362f4c7ed793c3ad514b2e08165 = L.circleMarker(
+                [-6.0032698, -40.2946389],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_73f55fcac627a6929c44d7ed166e314e);
+        
+    
+        var popup_11ea82ef92fc5d0d6a4f028d8926f44d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ac9c1eae875388663186178a25160797 = $(`<div id="html_ac9c1eae875388663186178a25160797" style="width: 100.0%; height: 100.0%;">         <b>Município:</b> TAUA, CE<br>         <b>Total de internações:</b> 17<br>         <b>Internações para sobrecarregados:</b> 15<br>         <b>% para sobrecarregados:</b> 88.24%         </div>`)[0];
+                popup_11ea82ef92fc5d0d6a4f028d8926f44d.setContent(html_ac9c1eae875388663186178a25160797);
+            
+        
+
+        circle_marker_a4c2c362f4c7ed793c3ad514b2e08165.bindPopup(popup_11ea82ef92fc5d0d6a4f028d8926f44d)
+        ;
+
+        
+    
+    
+            var circle_marker_cac0c57c519dac740c9a7c0454d0c07d = L.circleMarker(
+                [-5.182763636489275, -40.66716290409968],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_73f55fcac627a6929c44d7ed166e314e);
+        
+    
+        var popup_371b7ba37a122cd7cb4684d28c3853ec = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6065ed56a4f73e71cbce7ba3c2e3dfb0 = $(`<div id="html_6065ed56a4f73e71cbce7ba3c2e3dfb0" style="width: 100.0%; height: 100.0%;">         <b>Hospital candidato:</b> HOSPITAL SAO LUCAS<br>         <b>CNES:</b> 2481073<br>         <b>Porte:</b> Grande<br>         <b>Distância aproximada:</b> 100.12 km         </div>`)[0];
+                popup_371b7ba37a122cd7cb4684d28c3853ec.setContent(html_6065ed56a4f73e71cbce7ba3c2e3dfb0);
+            
+        
+
+        circle_marker_cac0c57c519dac740c9a7c0454d0c07d.bindPopup(popup_371b7ba37a122cd7cb4684d28c3853ec)
+        ;
+
+        
+    
+    
+            var poly_line_9b31752b2f4a149e33f16d23ecaf6705 = L.polyline(
+                [[-6.0032698, -40.2946389], [-5.182763636489275, -40.66716290409968]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_73f55fcac627a6929c44d7ed166e314e);
+        
+    
+            var circle_marker_815d9e753a9a2695121c936ba3a0b718 = L.circleMarker(
+                [-3.2781386, -39.2684399],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_73f55fcac627a6929c44d7ed166e314e);
+        
+    
+        var popup_c2f9a49f2951fcfaa55818d858d91dc2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_41424cc22de6c25243baf1691e42f381 = $(`<div id="html_41424cc22de6c25243baf1691e42f381" style="width: 100.0%; height: 100.0%;">         <b>Município:</b> TRAIRI, CE<br>         <b>Total de internações:</b> 9<br>         <b>Internações para sobrecarregados:</b> 7<br>         <b>% para sobrecarregados:</b> 77.78%         </div>`)[0];
+                popup_c2f9a49f2951fcfaa55818d858d91dc2.setContent(html_41424cc22de6c25243baf1691e42f381);
+            
+        
+
+        circle_marker_815d9e753a9a2695121c936ba3a0b718.bindPopup(popup_c2f9a49f2951fcfaa55818d858d91dc2)
+        ;
+
+        
+    
+    
+            var circle_marker_127d7da55f40b2518d4c1c4c02a8e22b = L.circleMarker(
+                [-3.7126897010388378, -38.5729448506617],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_73f55fcac627a6929c44d7ed166e314e);
+        
+    
+        var popup_b746ca3bc29ce3d790c7ebd65e54f56f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a4bb0ecbae68a64bf6520a73c9da6d9e = $(`<div id="html_a4bb0ecbae68a64bf6520a73c9da6d9e" style="width: 100.0%; height: 100.0%;">         <b>Hospital candidato:</b> HOSPITAL DISTRITAL DR FERNANDES TAVORA<br>         <b>CNES:</b> 2528843<br>         <b>Porte:</b> Grande<br>         <b>Distância aproximada:</b> 91.07 km         </div>`)[0];
+                popup_b746ca3bc29ce3d790c7ebd65e54f56f.setContent(html_a4bb0ecbae68a64bf6520a73c9da6d9e);
+            
+        
+
+        circle_marker_127d7da55f40b2518d4c1c4c02a8e22b.bindPopup(popup_b746ca3bc29ce3d790c7ebd65e54f56f)
+        ;
+
+        
+    
+    
+            var poly_line_68f15ee5ea8c753ba8ca0b225db0eb1f = L.polyline(
+                [[-3.2781386, -39.2684399], [-3.7126897010388378, -38.5729448506617]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_73f55fcac627a6929c44d7ed166e314e);
+        
+    
+            var circle_marker_f88679e9a608ed1e11ab3651b7ecb4f9 = L.circleMarker(
+                [-6.7943548, -39.2982103],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_73f55fcac627a6929c44d7ed166e314e);
+        
+    
+        var popup_45a916ffd849a59eae5b0fafd46622f7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fe0693677a34bd39303ce30e72736e49 = $(`<div id="html_fe0693677a34bd39303ce30e72736e49" style="width: 100.0%; height: 100.0%;">         <b>Município:</b> VARZEA ALEGRE, CE<br>         <b>Total de internações:</b> 12<br>         <b>Internações para sobrecarregados:</b> 10<br>         <b>% para sobrecarregados:</b> 83.33%         </div>`)[0];
+                popup_45a916ffd849a59eae5b0fafd46622f7.setContent(html_fe0693677a34bd39303ce30e72736e49);
+            
+        
+
+        circle_marker_f88679e9a608ed1e11ab3651b7ecb4f9.bindPopup(popup_45a916ffd849a59eae5b0fafd46622f7)
+        ;
+
+        
+    
+    
+            var circle_marker_aaa07edc0c7383517d44af8fe75f679d = L.circleMarker(
+                [-7.2263193, -39.3254599],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_73f55fcac627a6929c44d7ed166e314e);
+        
+    
+        var popup_ac6003247d0c9b524268e30c5f33201d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bc4a6b85b8a75e9ddf014cdf4339b50a = $(`<div id="html_bc4a6b85b8a75e9ddf014cdf4339b50a" style="width: 100.0%; height: 100.0%;">         <b>Hospital candidato:</b> HOSPITAL REGIONAL DO CARIRI<br>         <b>CNES:</b> 6779522<br>         <b>Porte:</b> Grande<br>         <b>Distância aproximada:</b> 48.13 km         </div>`)[0];
+                popup_ac6003247d0c9b524268e30c5f33201d.setContent(html_bc4a6b85b8a75e9ddf014cdf4339b50a);
+            
+        
+
+        circle_marker_aaa07edc0c7383517d44af8fe75f679d.bindPopup(popup_ac6003247d0c9b524268e30c5f33201d)
+        ;
+
+        
+    
+    
+            var poly_line_cf4e6faa7ccace4a5d0bcaf97b24fbbc = L.polyline(
+                [[-6.7943548, -39.2982103], [-7.2263193, -39.3254599]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_73f55fcac627a6929c44d7ed166e314e);
+        
+</script>
+</html>
