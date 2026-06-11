@@ -123,3 +123,34 @@ def plotar_grafo_folium(G, output_path="output/grafo.html", sobrecarregados=None
     m.save(output_path)
     print(f"Mapa salvo em: {output_path}")
     return m
+
+def criar_grafo_reestruturado(df):
+
+    G = nx.DiGraph()
+
+    for _, row in df.iterrows():
+
+        municipio = row['MUNICIPIO']
+        hospital = row['HOSPITAL_CANDIDATO']
+
+        G.add_node(
+            municipio,
+            bipartite=0,
+            latitude=row['LAT_MUNICIPIO'],
+            longitude=row['LON_MUNICIPIO']
+        )
+
+        G.add_node(
+            hospital,
+            bipartite=1,
+            latitude=row['LAT_HOSPITAL_CANDIDATO'],
+            longitude=row['LON_HOSPITAL_CANDIDATO']
+        )
+
+        G.add_edge(
+            municipio,
+            hospital,
+            weight=row['INTERNACOES_PARA_SOBRECARREGADO']
+        )
+
+    return G
