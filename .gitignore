@@ -18,6 +18,16 @@ __pycache__/
 dados/DBC/
 dados/dados_sih_2024.csv
 
+# Arquivos pesados de geodados (IMPORTANTE no seu projeto)
+dados/*.osm.pbf
+dados/*.graphml
+dados/*.pbf
+
+# Outputs grandes (evita estourar GitHub de novo)
+output/*.html
+output/*.geojson
+output/*.parquet
+
 # VS Code
 .vscode/
 
